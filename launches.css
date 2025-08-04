@@ -1,0 +1,279 @@
+/* style.css for Purple Bloom Series */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  background-color: #fceeff;
+  color: #333;
+}
+
+.header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  font-size: 1.8rem;
+  color: #A2538B;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  font-family:sans-serif ;
+}
+
+.nav a:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #A2538B;
+  bottom: -4px;
+  left: 0;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.search-box {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-size: 100% 150%;
+}
+
+.banner {
+  position:relative;
+  width: 100%;
+  height: max-content;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-img2 {
+  width: 100%;
+  height: 550px;
+  display: block;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.4);
+}
+
+.banner-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.banner-btn {
+  padding: 0.6rem 1.4rem;
+  background-color: #5a2d82;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.banner-btn2 {
+  padding: 20px 20px;
+  background-color:#3f9f55;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.banner-btn:hover {
+  background-color: #38125a;
+}
+
+.products-area {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #A2538B;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+.product-card {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+  max-width: 260px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.product-card h4 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.product-card p {
+  font-weight: bold;
+  color: #A2538B;
+  margin-bottom: 1rem;
+}
+
+.add-to-cart, .buy-now {
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  margin: 0.3rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: none;
+}
+
+.add-to-cart {
+  background: #fff;
+  color: #333;
+  border: 2px solid #CD637B;
+}
+
+.add-to-cart:hover {
+  background-color: #CD637B;
+  color: #fff;
+}
+
+.buy-now {
+  background-color: #CD637B;
+  color: white;
+}
+
+.buy-now:hover {
+  background-color: #650325;
+}
+
+.footer {
+  background: linear-gradient(to bottom, #FFC3CE, #FF5D7B);
+  padding: 2rem;
+  color: #333;
+  margin-top: 4rem;
+}
+
+.footer-cols {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-cols div h3 {
+  color: #CD637B;
+  margin-bottom: 0.5rem;
+}
+
+.footer-cols div a,
+.footer-cols div p {
+  display: block;
+  color: #444;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+}
+
+.subscribe-btn {
+  background-color: #CD637B;
+  color: white;
+  border: none;
+  padding: 0.4rem 1.2rem;
+  margin-top: 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.subscribe-btn:hover {
+  background-color: #650325;
+}
+
+.footer-bottom {
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.payment-icons img {
+  height: 30px;
+  margin-right: 1rem;
+}
+
+.social-icons i {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  color: #1A1B1B;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #000;
+}
+

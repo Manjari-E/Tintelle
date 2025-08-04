@@ -1,0 +1,395 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display',;
+}
+
+body {
+    background-color: #fceeff;
+    color: #333;
+}
+
+.header {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    font-size: 1.8rem;
+    color: #A2538B;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #A2538B;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search-box {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-size: 100% 150%;
+    background-image:url(images/herosecbg.jpg);
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-img {
+    width: 40%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+    
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-text span {
+    color: #A2538B;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.hero-buttons a {
+    background-color: #CD637B;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.hero-buttons a.read-btn {
+    background-color: #eee;
+    color: #333;
+}
+
+.hero-buttons a:hover {
+    opacity: 0.85;
+}
+
+.categories, .top-picks, .launches {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.category-grid, .product-grid, .launch-grid {
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.category-item, .product-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    width: 150px;
+    transition: transform 0.3s;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.category-item:hover, .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.category-item img, .product-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.launch-grid img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.launch-grid img:hover {
+    transform: scale(1.05);
+}
+
+.mid-banner {
+    padding: 3rem 2rem;
+    height: 80vh;
+    background-size: 100%;
+    background-repeat:repeat-x;
+    text-align: justify;
+    background-image: url(images/glowup.jpg);
+}
+
+.mid-banner h2 span {
+    color: #A2538B;
+}
+
+.mid-banner img {
+    max-width: 100%;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(images/newsbg.jpg);
+    padding: 3rem 2rem;
+    gap: 3rem;
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+.discount {
+    font-size: 10rem;
+    font-weight:bolder;
+    color: #CD637B;
+}
+
+.newsletter-content {
+    text-align: center;
+}
+
+.newsletter-content input {
+    padding: 0.7rem;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.subscribe-btn {
+    background: #CD637B;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.subscribe-btn:hover {
+    background: #d84e7f;
+}
+
+.footer {
+    background:linear-gradient(to bottom, #FFC3CE,#FF5D7B );
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.footer-cols {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.footer-cols div h3 {
+    margin-bottom: 0.5rem;
+    color: #CD637B;
+}
+
+.footer-cols div a, .footer-cols div p {
+    margin: 0.3rem 0;
+    display: block;
+    color: #555;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-cols div a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
+
+.payment-icons img {
+    height: 30px;
+    margin-right: 1rem;
+}
+
+.social-icons i {
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+    color: #1A1B1B;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #1A1B1B;
+}
+
+
+
+<!--____________________________________________________________________________________________________________________-->
+
+/* Login Page Styles */
+.login-body {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-image: url('images/newsbg.jpg');
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #8c6f50;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.7rem 2.5rem 0.7rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.input-group i {
+    position: absolute;
+    right: 10px;
+    top: 38px;
+    color: #aaa;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 0.7rem;
+    background: linear-gradient(to right, #d9bfa3, #8c6f50);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: opacity 0.3s;
+}
+
+.login-btn:hover {
+    opacity: 0.85;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+
+
+<!------------------------------------------------------------------------------------------------------------------------------->
+.full-input {
+  width: 100%;
+  height: 55px;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
