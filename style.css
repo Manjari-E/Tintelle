@@ -392,4 +392,323 @@ body {
   border-radius: 8px;
   box-sizing: border-box;
 }
+<!-----------------------------------------------------------------------------------------------------------------------------------------
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+}
+
+/* ================= HEADER ================= */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-weight: bold;
+    color: #c35a8d;
+    font-size: 22px;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+}
+
+.icon {
+    color: #c35a8d;
+}
+
+/* ================= HERO ================= */
+.hero {
+    display: flex;
+    align-items: center;        /* vertical center */
+    justify-content: space-between;
+    padding: 80px 100px;
+    background: #fde1ea;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* TEXT CENTERED */
+.hero-text {
+    max-width: 600px;
+    text-align: center;
+    margin-left: 100px;
+}
+
+/* IMAGE TO RIGHT CORNER */
+.hero-img {
+    flex-shrink: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.hero-img img {
+    height: 90vh;
+    object-fit: cover;
+}
+
+
+
+.hero-text h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-text span {
+    color: #b0457b;
+}
+
+.hero-text p {
+    max-width: 520px;
+    margin: 0 auto 15px;                  /* centers paragraph */
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 22px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.primary {
+    background: #b0457b;
+    color: #fff;
+}
+
+.secondary {
+    background: #fff;
+    color: #b0457b;
+    border: 1px solid #b0457b;
+}
+
+/* IMAGE SIDE */
+.hero-img {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;             /* RIGHT CORNER */
+}
+
+.hero-img img {
+    width: 320px;
+    border-radius: 25px;
+}
+
+/* ================= STORY ================= */
+.story-section {
+  background: #f8c8d8;
+  padding: 50px 20px;
+}
+
+.story-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: #f9d5e2;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.story-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.story-content h2 {
+  color: #b5476b;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.story-content p {
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.story-content strong {
+  display: block;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+/* ================= MISSION ================= */
+.mission-section {
+  background: #f9d5e2;
+  padding: 60px 20px;
+}
+
+.mission-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;          /* must be flex */
+  align-items: center;
+}
+
+.mission-text {
+  flex: 1;
+}
+
+.mission-text h2 {
+  font-size: 36px;
+  color: #b24a6a;
+  margin-bottom: 20px;
+  font-family: Georgia, serif;
+}
+
+.mission-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 20px;
+  max-width: 550px;
+}
+
+.bold-text {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.mission-image {
+  margin-left: auto;   /* pushes image fully to right */
+}
+.mission-image img {
+  height: 90vh;
+  object-fit: cover;
+}
+
+/* ================= PRODUCTS ================= */
+.product-section {
+  background: linear-gradient(to right, #fbd0dc, #f8c6d4);
+  padding: 60px 20px 80px;
+  text-align: center;
+}
+
+.product-title {
+  font-size: 34px;
+  color: #b24a6a;
+  font-family: Georgia, serif;
+  margin-bottom: 20px;
+}
+
+.product-desc {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.product-desc p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.highlight-text {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+/* Cards layout */
+.product-cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  flex-wrap: wrap;
+}
+
+/* Individual card */
+.product-card {
+  text-align: center;
+}
+
+/* White rounded box */
+.card-box {
+  background: #ffffff;
+  width: 190px;
+  height: 170px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Images inside cards */
+.card-box img {
+  max-width: 110px;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+/* Label under card */
+.product-card h4 {
+  margin-top: 15px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #000;
+}
+
+
+/* ================= FOOTER ================= */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #f6c1d6;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text,
+    .hero-img {
+        width: 100%;
+    }
+
+    .hero-img {
+        justify-content: center;
+        margin-top: 30px;
+    }
+}
 
